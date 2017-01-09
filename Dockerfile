@@ -11,7 +11,7 @@ RUN git clone https://github.com/zyfdegh/blog.git --depth=1 repo
 RUN apt-get update \
     && apt-get install -y cron \
     && rm -rf /var/lib/apt/lists/* \
-    && timedatectl set-timezone Asia/Shanghai
+    && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 COPY crontab /etc/cron.d/cron-pull
 
