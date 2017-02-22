@@ -18,12 +18,12 @@ example1: http://45.32.27.127/
 
 example2: https://zyfdegh.github.io/
 
-example3: https://myblog.com/
+example3: http://myblog.com/
 
 # Run
 
 If I have a domain `blog.fanach.win` -> `1.2.3.4`.
 
 ```sh
-sudo docker run -d --restart=always -p 80:80 -e BLOG_BASE_URL="https://blog.fanach.win/" zyfdedh/blog
+sudo docker run -d --restart=always -p 80:80 -e BLOG_BASE_URL="http://blog.fanach.win/" zyfdedh/blog
 ```
